@@ -47,7 +47,7 @@
   SO THAT I can track my money easily.
 ```
 
-## ![React Employee Directory Demo](./public/demo.gif)
+## ![PWA Budget Tracker Demo](./public/demo.gif)
 
 ## Contributors
 
