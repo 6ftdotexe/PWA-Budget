@@ -157,3 +157,9 @@ document.querySelector("#del-btn").addEventListener("click", function(event) {
   event.preventDefault();
   deletePending();
 });
+
+if (process.env.NODE_ENV === 'development') {
+  serviceWorker.unregister()
+} else {
+ serviceWorker.register()
+}
