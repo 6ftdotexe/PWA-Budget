@@ -145,9 +145,15 @@ function sendTransaction(isAdding) {
 }
 
 document.querySelector("#add-btn").onclick = function() {
+  event.preventDefault();
   sendTransaction(true);
 };
 
 document.querySelector("#sub-btn").onclick = function() {
   sendTransaction(false);
 };
+
+document.querySelector("#del-btn").addEventListener("click", function(event) {
+  event.preventDefault();
+  deletePending();
+});
